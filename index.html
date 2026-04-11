@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>hu ha ha ha ha</p>
+
+<div class="container">
+<!--test-->
+    <!-- Dashboard -->
+    <h2>Job Application Tracker</h2>
+
+    <div class="dashboard">
+        <div class="box">
+            <p>Total</p>
+            <h3 id="total">8</h3>
+        </div>
+        <div class="box">
+            <p>Interview</p>
+            <h3 id="interview">0</h3>
+        </div>
+        <div class="box">
+            <p>Rejected</p>
+            <h3 id="rejected">0</h3>
+        </div>
+    </div>
+
+    <!-- Jobs Section -->
+    <div class="job-header">
+        <h3>Available Jobs</h3>
+        <p id="jobCount">8 jobs</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('all')">All</button>
+        <button class="tab" onclick="showTab('interviewTab')">Interview</button>
+        <button class="tab" onclick="showTab('rejectedTab')">Rejected</button>
+    </div>
+
+    <!-- Cards -->
+    <div id="jobContainer"></div>
+
+</div>
+
+<script src="script1.js"></script>
 </body>
 </html>
