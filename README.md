@@ -4,8 +4,11 @@ Q1. What is the difference between getElementById, getElementsByClassName, and q
 Ans : 
 
 getElementById → selects one element by id
+
 getElementsByClassName → selects multiple elements by class
+
 querySelector → selects first matching element
+
 querySelectorAll → selects all matching elements
 
 
