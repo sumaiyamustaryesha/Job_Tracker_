@@ -114,8 +114,6 @@ h1 {
     color: gray;
 }
 
-
-/* ✅ simple responsive (DO NOT REMOVE) */
 @media (max-width: 600px) {
     .dashboard {
         flex-direction: column;
