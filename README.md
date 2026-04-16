@@ -11,6 +11,7 @@ querySelector → selects first matching element
 
 querySelectorAll → selects all matching elements
 
+---
 
 Q2. How do you create and insert a new element into the DOM?
 
