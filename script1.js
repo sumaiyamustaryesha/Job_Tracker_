@@ -24,7 +24,7 @@ cards.forEach(card => {
             statusText.innerText = "NOT APPLIED";
             interviewCount--;
         } else {
-            if (card.dataset.status === "rejected") rejectgit edCount--;
+            if (card.dataset.status === "rejected") rejectedCount--;
             card.dataset.status = "interview";
             statusText.innerText = "INTERVIEW";
             interviewCount++;
