@@ -3,49 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Tracker</title>
+    <title>Job Application Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-<!--test-->
-    <!-- Dashboard -->
-    <h2>Job Application Tracker</h2>
+    <div class="container">
 
-    <div class="dashboard">
-        <div class="box">
-            <p>Total</p>
-            <h3 id="total">8</h3>
+        <h1>Job Application Tracker</h1>
+
+        <!-- dashboard -->
+        <div class="dashboard">
+            <div class="box">
+                <p>Total</p>
+                <h2 id="totalCount">8</h2>
+            </div>
+            <div class="box">
+                <p>Interview</p>
+                <h2 id="interviewCount">0</h2>
+            </div>
+            <div class="box">
+                <p>Rejected</p>
+                <h2 id="rejectedCount">0</h2>
+            </div>
         </div>
-        <div class="box">
-            <p>Interview</p>
-            <h3 id="interview">0</h3>
+
+        <!-- jobs header -->
+        <div class="jobs-header">
+            <h2>Available Jobs</h2>
+            <p id="jobNumber">8 jobs</p>
         </div>
-        <div class="box">
-            <p>Rejected</p>
-            <h3 id="rejected">0</h3>
+
+        <!-- tabs -->
+        <div class="tabs">
+            <button class="tab active" data-tab="all">All</button>
+            <button class="tab" data-tab="interview">Interview</button>
+            <button class="tab" data-tab="rejected">Rejected</button>
+        </div>
+
+        <!-- job cards -->
+        <div id="jobContainer" class="jobs">
+
+    <!-- Job 1 -->
+    <div class="card" data-status="none">
+        <span class="delete">🗑</span>
+        <h3>Mobile First Corp</h3>
+        <p>React Native Developer</p>
+        <small>Remote • Full-time • $130k-$175k</small>
+
+        <div class="status">NOT APPLIED</div>
+        <p>Build mobile apps used by many users worldwide.</p>
+
+        <div class="btns">
+            <button class="interview">Interview</button>
+            <button class="rejected">Rejected</button>
         </div>
     </div>
 
-    <!-- Jobs Section -->
-    <div class="job-header">
-        <h3>Available Jobs</h3>
-        <p id="jobCount">8 jobs</p>
+    <!-- Job 2 -->
+    <div class="card" data-status="none">
+        <span class="delete">🗑</span>
+        <h3>WebFlow Agency</h3>
+        <p>Web Designer</p>
+        <small>Los Angeles • Part-time • $80k-$120k</small>
+
+        <div class="status">NOT APPLIED</div>
+        <p>Create modern websites for clients.</p>
+
+        <div class="btns">
+            <button class="interview">Interview</button>
+            <button class="rejected">Rejected</button>
+        </div>
     </div>
 
-    <!-- Tabs -->
-    <div class="tabs">
-        <button class="tab active" onclick="showTab('all')">All</button>
-        <button class="tab" onclick="showTab('interviewTab')">Interview</button>
-        <button class="tab" onclick="showTab('rejectedTab')">Rejected</button>
-    </div>
+     <!-- Job 3 -->
+<div class="card" data-status="none">
+    <span class="delete">🗑</span>
+    <h3>DataViz Solutions</h3>
+    <p>Data Specialist</p>
+    <small>Boston • Full-time • $120k</small>
 
-    <!-- Cards -->
-    <div id="jobContainer"></div>
+    <div class="status">NOT APPLIED</div>
+    <p>Work with analytics and handle data reports.</p>
+
+    <div class="btns">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+    </div>
+</div>
+
+<!-- Job 4 -->
+<div class="card" data-status="none">
+    <span class="delete">🗑</span>
+    <h3>Innovation Labs</h3>
+    <p>UI/UX Engineer</p>
+    <small>Austin • Full-time • $110k</small>
+
+    <div class="status">NOT APPLIED</div>
+    <p>Create simple and user friendly interfaces.</p>
+
+    <div class="btns">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+    </div>
+</div>
+
+<!-- Job 5 -->
+<div class="card" data-status="none">
+    <span class="delete">🗑</span>
+    <h3>MegaCorp</h3>
+    <p>JS Developer</p>
+    <small>New York • Full-time • $130k</small>
+
+    <div class="status">NOT APPLIED</div>
+    <p>Develop large scale web applications.</p>
+
+    <div class="btns">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+    </div>
+</div>
+
+<!-- Job 6 -->
+<div class="card" data-status="none">
+    <span class="delete">🗑</span>
+    <h3>StartupXYZ</h3>
+    <p>Full Stack Dev</p>
+    <small>Remote • Full-time • $120k</small>
+
+    <div class="status">NOT APPLIED</div>
+    <p>Work in a fast growing startup environment.</p>
+
+    <div class="btns">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+    </div>
+</div>
+
+<!-- Job 7 -->
+<div class="card" data-status="none">
+    <span class="delete">🗑</span>
+    <h3>TechCorp</h3>
+    <p>Frontend Dev</p>
+    <small>San Francisco • Full-time • $140k</small>
+
+    <div class="status">NOT APPLIED</div>
+    <p>Build modern UI using React and tools.</p>
+
+    <div class="btns">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+    </div>
+</div>
+
+<!-- Job 8 -->
+<div class="card" data-status="none">
+    <span class="delete">🗑</span>
+    <h3>CloudNet</h3>
+    <p>Backend Dev</p>
+    <small>Seattle • Full-time • $135k</small>
+
+    <div class="status">NOT APPLIED</div>
+    <p>Manage server side logic and APIs.</p>
+
+    <div class="btns">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+    </div>
+</div>
 
 </div>
 
-<script src="script1.js"></script>
+    </div>
+
+    <script src="script1.js"></script>
 </body>
 </html>
